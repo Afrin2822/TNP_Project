@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "470330133214",
+    "project_id": "tnp-final",
+    "storage_bucket": "tnp-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470330133214:android:c99f74e09011ada1fe104f",
+        "android_client_info": {
+          "package_name": "com.example.tnpfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8sBtI7EoaaZybDE85f34WyS-0LpLJrfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
