@@ -32,8 +32,8 @@ class _MyFrequentCompanyState extends State<MyFrequentCompany> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              Color(0xFF7F00FF),
-              Color(0xFFE100FF),
+              Color(0xFFF7F4FA),
+              Color(0xFFFBF7FC),
             ],
           ),
         ),

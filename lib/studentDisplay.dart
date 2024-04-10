@@ -110,7 +110,7 @@ class _MyStudentState extends State<MyStudent> {
                   _selectedOption = 'AMCAT';
                   Navigator.pop(context);
                 });
-                Navigator.push(context, MaterialPageRoute(builder: (context) => MyAmcat()),);
+                // Navigator.push(context, MaterialPageRoute(builder: (context) => MyAmcat()),);
               },
               child: Text('AMCAT'),
             ),

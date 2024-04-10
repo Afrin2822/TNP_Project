@@ -1,8 +1,6 @@
 // import 'dart:js';
 import 'dart:ui';
 
-//auth
-import 'package:tnpfinal/widget_tree.dart';
 
 import 'package:tnpfinal/Company.dart';
 import 'package:tnpfinal/DreamCompany.dart';
@@ -20,8 +18,8 @@ import 'package:tnpfinal/input.dart';
 import 'dart:convert';
 
 import 'package:tnpfinal/register.dart';
-import 'package:tnpfinal/login.dart';
-import 'package:tnpfinal/options.dart';
+import 'package:tnpfinal/Admin_login.dart';
+import 'package:tnpfinal/firstpage.dart';
 import 'package:tnpfinal/studentDisplay.dart';
 import 'package:tnpfinal/Tnp.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -40,8 +38,7 @@ void main() async {
         projectId: 'tnp-final',
         storageBucket: 'tnp-final.appspot.com',)
   );
-  //auth
-  runApp(const MyApp());
+
 
 
 
@@ -54,7 +51,7 @@ void main() async {
         //'forecast': (context) => MyForecast(userLocation: ''),
         // 'login_register': (context) => const LoginPage(),
         'studentDisplay' : (context) => const MyStudent(),
-        'Amcat' : (context) => const MyAmcat(),
+        // 'Amcat' : (context) => const MyAmcat(),
         'Company' : (context) => const MyCompany(),
         'DreamCompany' : (context) => const MyDreamCompany(),
         'FrequentCompany' : (context) => const MyFrequentCompany(),
@@ -64,23 +61,4 @@ void main() async {
         'myPdf' :(context) => const MyPdf(),
        }));
 }
-
-//auth
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}): super(key:key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-      ),
-      home: const WidgetTree(),
-    );
-  }
-}
-
-
 

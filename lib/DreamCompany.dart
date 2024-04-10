@@ -67,8 +67,8 @@ class _MyDreamCompanyState extends State<MyDreamCompany> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color(0xFF375DE8),
-                Color(0xFFE100FF),
+                Color(0xFFF3F4F6),
+                Color(0xFFF8F6F8),
               ],
             ),
           ),
@@ -188,91 +188,3 @@ class CompanyDetails extends StatelessWidget {
 
 
 
-
-// import 'package:flutter/material.dart';
-//
-// class MyDreamCompany extends StatefulWidget {
-//   const MyDreamCompany({Key? key});
-//
-//   @override
-//   State<MyDreamCompany> createState() => _MyDreamCompanyState();
-// }
-//
-// class _MyDreamCompanyState extends State<MyDreamCompany> {
-//   List<String> dreamCompanies = [
-//     'Dream Company 1',
-//     'Dream Company 2',
-//     'Dream Company 3',
-//     'Dream Company 4',
-//     'Dream Company 5',
-//     'Dream Company 6',
-//     'Dream Company 7',
-//     'Dream Company 8',
-//     'Dream Company 9',
-//     'Dream Company 10',
-//     'Dream Company 11',
-//     'Dream Company 12',
-//     'Dream Company 13',
-//     'Dream Company 14',
-//     'Dream Company 15',
-//     'Dream Company 16',
-//     'Dream Company 17',
-//     'Dream Company 18',
-//     'Dream Company 19',
-//     'Dream Company 20',
-//   ];
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('Dream Company Infos'),
-//       ),
-//       body: Container(
-//         decoration: BoxDecoration(
-//           gradient: LinearGradient(
-//             begin: Alignment.topCenter,
-//             end: Alignment.bottomCenter,
-//             colors: [
-//               Color(0xFF375DE8),
-//               Color(0xFFE100FF),
-//             ],
-//           ),
-//         ),
-//         child: ListView.builder(
-//           itemCount: dreamCompanies.length,
-//           itemBuilder: (BuildContext context, int index) {
-//             return ListTile(
-//               title: Text(dreamCompanies[index]),
-//               onTap: () {
-//                 // Navigate to a new state for the selected dream company
-//                 Navigator.push(
-//                   context,
-//                   MaterialPageRoute(builder: (context) => CompanyDetails(dreamCompanies[index])),
-//                 );
-//               },
-//             );
-//           },
-//         ),
-//       ),
-//     );
-//   }
-// }
-//
-// class CompanyDetails extends StatelessWidget {
-//   final String companyName;
-//
-//   CompanyDetails(this.companyName);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('Company Details'),
-//       ),
-//       body: Center(
-//         child: Text('Details of $companyName will be shown here'),
-//       ),
-//     );
-//   }
-// }
